@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Web - Contact Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <link
       rel="icon"
       type="icon/x-icon"
@@ -37,7 +38,7 @@
           </div>
           <div>
             <label for="input-email">Email</label>
-            <input id="input-email" type="text" />
+            <input id="input-email" type="email" />
           </div>
           <div>
             <label for="input-phone">Phone Number</label>
@@ -50,7 +51,7 @@
               <option value="Problem With Our Site">
                 Problem With Our Site
               </option>
-              <option value="Questions on Order">Questions on Order</option>
+              <option value="Work">Work</option>
               <option value="Other Questions">Other Questions</option>
             </select>
           </div>
@@ -59,10 +60,11 @@
             <br />
             <textarea id="input-message"></textarea>
           </div>
-          <button onclick="submitForm()">Submit</button>
+          <button type="button" onclick="submitForm()">Submit</button>
         </form>
       </div>
     </div>
+
     <footer>By Joel Hukubun | 2021</footer>
   </body>
 </html>

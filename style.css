@@ -6,22 +6,6 @@
   cursor: url(img/cursor.png), auto !important;
 }
 
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  :root {
-    --body-bg: #ffffff;
-    --body-color: #000000;
-  }
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg: #000000;
-    --body-color: #ffffff;
-  }
-}
-
 /* Navbar */
 
 nav {
