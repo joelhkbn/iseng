@@ -1,3 +1,4 @@
+// fungsi untuk mengambil data dari form
 function submitForm() {
   let name = document.getElementById('input-name').value
   let email = document.getElementById('input-email').value
@@ -5,6 +6,7 @@ function submitForm() {
   let subject = document.getElementById('input-subject').value
   let message = document.getElementById('input-message').value
 
+  // menggunakan OR untuk cek form-form yang belum di isi
   if (
     name == '' ||
     email == '' ||
@@ -12,9 +14,11 @@ function submitForm() {
     subject == '' ||
     message == ''
   ) {
-    alert('mohon diisi lengkap datanya ya mblo...')
+    // memakai return agar kodingan di bawahnya tidak di execute
+    return alert('mohon diisi lengkap datanya ya mblo...')
   }
 
+  // untuk membuat elemen a agar mengeksekusi perintah submit dan data form bakal dikirim ke email
   let emailReceiver = 'joelhukubun@gmail.com'
   let a = document.createElement('a')
   a.href = `mailto:${emailReceiver}?subject=${subject}&body=Hallo, nama saya ${name}, ${message}`
