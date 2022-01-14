@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web - Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <link
+      rel="icon"
+      type="icon/x-icon"
+      href="https://dumbways.id/img/images/brandwhite.png"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-side">
+        <img src="img/logo.png" alt="logo" />
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side"><a href="">Contact Me</a></div>
+    </nav>
+
+    <!-- Form -->
+    <div class="form-contact">
+      <div class="container-form">
+        <form>
+          <h1>Contact Me</h1>
+          <div>
+            <label for="input-name">Name</label>
+            <input id="input-name" type="text" />
+          </div>
+          <div>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email" />
+          </div>
+          <div>
+            <label for="input-phone">Phone Number</label>
+            <input id="input-phone" type="text" />
+          </div>
+          <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject">
+              <option value="Privacy Policy">Privacy Policy</option>
+              <option value="Problem With Our Site">
+                Problem With Our Site
+              </option>
+              <option value="Work">Work</option>
+              <option value="Other Questions">Other Questions</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <br />
+            <textarea id="input-message"></textarea>
+          </div>
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>By Joel Hukubun | 2021</footer>
+  </body>
+</html>
